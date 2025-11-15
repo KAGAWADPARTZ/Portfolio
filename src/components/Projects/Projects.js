@@ -2,11 +2,12 @@ import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import Coop from"../../Assets/Projects/Coop.png";
-import NewYear from "../../Assets/Projects/NewYear.png";
+import Proventous from "../../Assets/Projects/Proventous.png";
 import LaundryApp from "../../Assets/Projects/LaundryApp.jpg";
 import MoneySaver from "../../Assets/Projects/MoneySaver.png"
-import ValentineCard from "../../Assets/Projects/ValentineCard.png"
+import Worka from "../../Assets/Projects/Worka.png"
 import Xcess from "../../Assets/Projects/Xcess.jpg";  
+import Thribo from "../../Assets/Projects/Thribo.jpg"; 
 
 function Projects() {
   return (
@@ -33,12 +34,12 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={ValentineCard}
+              imgPath={Worka}
               isBlog={false}
-              title="Valentine Card"
-              description="Looking for a quick way to share your affection? Valentine Card provides a charming, static digital card, designed for effortless sharing. It's the perfect, straightforward way to send a sweet Valentine's message to someone special."
-              ghLink="https://github.com/KAGAWADPARTZ/valentine"
-              demoLink="https://valentine-three-chi.vercel.app"
+              title="Worka"
+              description="Worka is a Human Resource Management System for organizations to manage employees, attendance, tasks, and operations. The web application provides an admin dashboard and employee portal with multi-tenant support, while the mobile app offers on-the-go access. Key features include attendance tracking Geofence, IP-based, task management with Kanban boards, team chat, document management. The system supports both web and mobile access for HR management."
+              // ghLink="https://github.com/KAGAWADPARTZ/valentine"
+              demoLink="https://worka.bblabs.dev/auth/login"
             />
           </Col>
 
@@ -47,7 +48,7 @@ function Projects() {
               imgPath={LaundryApp}
               isBlog={false}
               title="Laundry App"
-              description="You can easily book pickup and delivery for all your washing and dry cleaning needs, giving you back precious time. It's the Grab experience, but for your dirty clothes! Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
+              description="You can easily book pickup and delivery for all your washing and dry cleaning needs, giving you back precious time. It's the Grab experience, but for your dirty clothes! Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage."
               ghLink="https://github.com/KAGAWADPARTZ/LaundryShop"              
             />
           </Col>
@@ -74,11 +75,22 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={NewYear}
+              imgPath={Proventous}
               isBlog={false}
-              title="NewYearCss"
-              description="NewYearCSSs is a collection of beautifully crafted, minimalist New Year's greetings built purely with CSS. This project showcases the power of clean code and subtle animations to create festive and modern designs. Perfect for adding a touch of holiday cheer to websites, digital cards, or UI elements, NewYearCSSs provides a lightweight and visually appealing way to wish everyone a Happy New Year."      
-              demoLink="https://try-my-14.netlify.app"      
+              title="Proventous"
+              description="Proventous is a comprehensive job finding platform AND company management system that revolutionizes how companies manage their workforce while connecting job seekers with opportunities. The platform combines intelligent job matching with complete employee lifecycle management."      
+              demoLink="https://proventous.com"      
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={Thribo}
+              isBlog={false}
+              title="T.H.I.R.I.B.O"
+              description="Thribo is a sensory processing screening tool that helps identify whether individuals may need medical consultation based on their sensory processing patterns. The app evaluates six key sensory domains—touch, proprioception, vestibular, auditory, vision, and taste/smell—through an intuitive rating system, providing insights that can guide users toward appropriate medical care when needed."      
+              // demoLink="https://proventous.com" 
+              customFooter="Internship Project"     
             />
           </Col>
         </Row>
