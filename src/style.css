@@ -466,7 +466,69 @@ button:focus {
   opacity: 0.9 !important;
   transition: all 0.5s ease 0s !important;
   height: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
 }
+
+.project-card-view .card-body {
+  display: flex !important;
+  flex-direction: column !important;
+  flex: 1 !important;
+  text-align: center !important;
+}
+
+.project-card-view .card-body .card-title {
+  text-align: center !important;
+}
+
+.project-card-view .card-body .card-text {
+  text-align: left !important;
+}
+
+.project-card-view .card-text {
+  flex: 1 !important;
+  max-height: 180px !important;
+  overflow-y: auto !important;
+  line-height: 1.4 !important;
+  text-align-last: left !important;
+  text-justify: inter-word !important;
+  word-spacing: 0.05em !important;
+  hyphens: auto !important;
+  -webkit-hyphens: auto !important;
+  -moz-hyphens: auto !important;
+  -ms-hyphens: auto !important;
+  letter-spacing: 0 !important;
+}
+
+.project-card-view .card-body .btn,
+.project-card-view .card-body > div:last-child {
+  margin-top: auto !important;
+}
+
+/* Single button - centered (exactly like the layout) */
+.project-card-view .card-body .btn:only-of-type {
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* Two buttons - side by side with 10px spacing, centered as a group */
+.project-card-view .card-body .btn:not(:only-of-type) {
+  display: inline-block !important;
+  vertical-align: middle !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  float: none !important;
+}
+
+.project-card-view .card-body .btn:not(:only-of-type):first-of-type {
+  margin-right: 10px !important;
+}
+
+.project-card-view .card-body .btn:not(:only-of-type):not(:first-of-type) {
+  margin-left: 10px !important;
+}
+
 .project-card-view:hover {
   transform: scale(1.02) !important;
   overflow: hidden !important;
