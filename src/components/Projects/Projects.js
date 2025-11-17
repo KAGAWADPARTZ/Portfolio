@@ -8,6 +8,7 @@ import MoneySaver from "../../Assets/Projects/MoneySaver.png"
 import Worka from "../../Assets/Projects/Worka.png"
 import Xcess from "../../Assets/Projects/Xcess.jpg";  
 import Thribo from "../../Assets/Projects/Thribo.jpg"; 
+import ProjectAG from "../../Assets/Projects/ProjectAG.png"; 
 
 function Projects() {
   return (
@@ -88,9 +89,20 @@ function Projects() {
               imgPath={Thribo}
               isBlog={false}
               title="T.H.I.R.I.B.O"
-              description="A sensory processing screening tool that evaluates six key domains (touch, proprioception, vestibular, auditory, vision, taste/smell) to help identify if individuals may need medical consultation."      
+              description="A sensory processing screening tool that evaluates six key domains (touch, proprioception, vestibular, auditory, vision, taste/smell to help identify if individuals may need medical consultation."      
               // demoLink="https://proventous.com" 
               customFooter="Internship Project"     
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={ProjectAG}
+              isBlog={false}
+              title="Project AG"
+              description="A CTF (Capture The Flag) website and project dedicated to restoring cybersecurity awareness in Iloilo City. Provides hands-on security challenges and educational resources to strengthen the local cybersecurity community."      
+              demoLink="https://project-ag.org" 
+              // customFooter="Internship Project"     
             />
           </Col>
         </Row>
