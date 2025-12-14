@@ -535,6 +535,32 @@ button:focus {
   box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important;
 }
 
+.project-card-view .achievement-list {
+  list-style: none !important;
+  padding-left: 0 !important;
+}
+
+.project-card-view .achievement-list li {
+  padding-bottom: 10px;
+  font-size: 1.25rem !important;
+  font-weight: 500 !important;
+}
+
+.project-card-view h5,
+.project-card-view p {
+  font-family: "Raleway", serif !important;
+}
+
+.project-card-view .achievement-date {
+  font-family: "Raleway", serif !important;
+}
+
+.project-card-view .card-img-top {
+  height: 250px !important;
+  width: 100% !important;
+  object-fit: cover !important;
+}
+
 .blog-card {
   padding-top: 50px !important;
   padding-bottom: 50px !important;
@@ -699,7 +725,7 @@ button:focus {
 }
 .resume .resume-title {
   font-size: 2em;
-  font-weight: 700;
+  font-weight: 400;
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -745,6 +771,14 @@ button:focus {
   top: 0;
   background: #fff;
   border: 2px solid #8a49a8;
+}
+
+.resume .resume-item h5 {
+  color: #d29fff;
+}
+
+.resume .resume-item p {
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .like-item {
