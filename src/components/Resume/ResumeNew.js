@@ -28,34 +28,62 @@ function ResumeNew() {
           </Button>
         </Row>
         <Row className="resume">
-          <Col md={6} className="resume-left">
-            <h3 className="resume-title">Education</h3>
-            <div className="resume-item">
+          <Col md={12}>
+            <h3 className="resume-title" style={{ textAlign: "center" }}>Education</h3>
+            <div className="resume-item" style={{ textAlign: "center" }}>
               <h4 className="resume-title">Bachelor of Science in Computer Science</h4>
               <h5>Iloilo Science And Technology University</h5>
               <p>
                 <em>Iloilo City, Philippines</em>
               </p>
-              <ul>
+              <ul style={{ textAlign: "left", display: "inline-block" }}>
                 <li>Completed comprehensive coursework in computer science fundamentals</li>
                 <li>Specialized in software development and programming</li>
                 <li>Developed strong foundation in algorithms, data structures, and system design</li>
               </ul>
             </div>
           </Col>
-          <Col md={6} className="resume-right">
-            <h3 className="resume-title">Experience</h3>
-            <div className="resume-item">
+        </Row>
+        <Row className="resume">
+          <Col md={12}>
+            <h3 className="resume-title" style={{ textAlign: "center" }}>Experience</h3>
+            <div className="resume-item" style={{ textAlign: "center" }}>
+              <h4 className="resume-title">Mobile Developer</h4>
+              <h5>SIEITZ</h5>
+              <p>
+                <em>08/01/2025 - Present</em>
+              </p>
+              <ul style={{ textAlign: "left", display: "inline-block" }}>
+                <li>Developing and maintaining mobile applications for iOS and Android platforms</li>
+                <li>Collaborating with cross-functional teams to deliver high-quality mobile solutions</li>
+                <li>Implementing responsive UI/UX designs and optimizing app performance</li>
+                <li>Writing clean, maintainable code following industry best practices</li>
+              </ul>
+            </div>
+            <div className="resume-item" style={{ textAlign: "center" }}>
               <h4 className="resume-title">Mobile App Developer & Co-Founder</h4>
-              <h5>Startup - Mobile App Development</h5>
+              <h5>Startup (Coming Soon)</h5>
               <p>
                 <em>Present</em>
               </p>
-              <ul>
-                <li>Leading development of mobile application startup</li>
-                <li>Architecting scalable solutions for mobile platforms</li>
-                <li>Collaborating with team on product strategy and implementation</li>
-                <li>Implementing best practices in mobile development</li>
+              <ul style={{ textAlign: "left", display: "inline-block" }}>
+                <li>Leading development and strategic direction of mobile application startup venture</li>
+                <li>Architecting scalable and robust solutions for cross-platform mobile applications</li>
+                <li>Collaborating with team members on product strategy, design, and implementation</li>
+                <li>Implementing industry best practices and modern development methodologies</li>
+              </ul>
+            </div>
+            <div className="resume-item" style={{ textAlign: "center" }}>
+              <h4 className="resume-title">Cross-Platform App Developer</h4>
+              <h5>T.H.I.R.I.B.O</h5>
+              <p>
+                <em>02/05/2025 - 03/28/2025</em>
+              </p>
+              <ul style={{ textAlign: "left", display: "inline-block" }}>
+                <li>Developing cross-platform mobile application for sensory processing screening and evaluation</li>
+                <li>Implementing comprehensive assessment tool evaluating six key sensory domains</li>
+                <li>Designing intuitive user interface for medical screening workflows and data collection</li>
+                <li>Building functionality to identify individuals who may need medical consultation</li>
               </ul>
             </div>
           </Col>

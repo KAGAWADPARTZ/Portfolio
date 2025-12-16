@@ -3,10 +3,13 @@ import { Col, Row } from "react-bootstrap";
 import {
   SiVisualstudiocode,
   SiPostman,
-  SiSlack,
   SiVercel,
 } from "react-icons/si";
-import { FaWindows } from "react-icons/fa";
+import { FaWindows,
+   FaGitAlt
+} from "react-icons/fa";
+
+import { DiLinux } from "react-icons/di";
 
 function Toolstack() {
   return (
@@ -21,10 +24,13 @@ function Toolstack() {
         <SiPostman />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiSlack />
+        <DiLinux />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiVercel />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <FaGitAlt />
       </Col>
     </Row>
   );

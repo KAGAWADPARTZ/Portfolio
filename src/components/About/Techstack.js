@@ -8,6 +8,7 @@ import {
   DiPython,
   DiGit,
   DiJava,
+  DiPhp,
 } from "react-icons/di";
 import {
   SiFirebase,
@@ -16,7 +17,8 @@ import {
   SiR,
   SiMariadb,
   SiAndroid,
-  SiTailwindcss
+  SiTailwindcss,
+  SiFlutter
 } from "react-icons/si";
 import { TbBrandCSharp } from "react-icons/tb";
 
@@ -67,6 +69,12 @@ function Techstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiTailwindcss />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiFlutter />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <DiPhp />
       </Col>
     </Row>
   );
