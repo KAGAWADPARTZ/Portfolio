@@ -80,10 +80,10 @@ function ResumeNew() {
                 <em>02/05/2025 - 03/28/2025</em>
               </p>
               <ul style={{ textAlign: "left", display: "inline-block" }}>
-                <li>Developing cross-platform mobile application for sensory processing screening and evaluation</li>
-                <li>Implementing comprehensive assessment tool evaluating six key sensory domains</li>
-                <li>Designing intuitive user interface for medical screening workflows and data collection</li>
-                <li>Building functionality to identify individuals who may need medical consultation</li>
+                <li>Developing and maintaining a cross-platform app for sensory screening workflows</li>
+                <li>Implementing assessments across six key sensory domains (touch to taste/smell)</li>
+                <li>Designing clear UI/UX for guided evaluations and reliable data collection</li>
+                <li>Building result summaries to help flag users who may need medical consultation</li>
               </ul>
             </div>
           </Col>

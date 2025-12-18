@@ -22,7 +22,7 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
+          {/* <Col md={4} className="project-card">
             <ProjectCard
               imgPath={MoneySaver}
               isBlog={false}
@@ -31,7 +31,7 @@ function Projects() {
               // ghLink="https://github.com/KAGAWADPARTZ/MoneySaver"
               demoLink="https://money-saver-i8ub.vercel.app"
             />
-          </Col>
+          </Col> */}
 
           <Col md={4} className="project-card">
             <ProjectCard
