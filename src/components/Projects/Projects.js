@@ -1,14 +1,17 @@
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import Coop from"../../Assets/Projects/Coop.png";
+import Coop from "../../Assets/Projects/Coop.png";
 import Proventous from "../../Assets/Projects/Proventous.png";
-import LaundryApp from "../../Assets/Projects/LaundryApp.jpg";
+import LaundryApp from "../../Assets/Projects/LaundryApp.png";
 import MoneySaver from "../../Assets/Projects/MoneySaver.png"
 import Worka from "../../Assets/Projects/Worka.png"
-import Xcess from "../../Assets/Projects/Xcess.jpg";  
-import Thribo from "../../Assets/Projects/Thribo.jpg"; 
-import ProjectAG from "../../Assets/Projects/ProjectAG.png"; 
+import Xcess from "../../Assets/Projects/Xcess.jpg";
+import Thribo from "../../Assets/Projects/Thribo.jpg";
+import ProjectAG from "../../Assets/Projects/ProjectAG.png";
+import Button from "react-bootstrap/Button";
+import { CgWebsite } from "react-icons/cg";
+import { FaAndroid } from "react-icons/fa";
 
 function Projects() {
   return (
@@ -40,7 +43,28 @@ function Projects() {
               title="Worka"
               description="A HRMS web and mobile apps for managing employees, attendance, Geofence & IP-based, tasks with Kanban boards, team chat, and documents. Multi-tenant support with admin dashboard and employee portal."
               // ghLink="https://github.com/KAGAWADPARTZ/valentine"
-              demoLink="https://worka.bblabs.dev/auth/login"
+              customFooter={
+                <>
+                  <Button
+                    variant="primary"
+                    href="https://worka.bblabs.dev/auth/login"
+                    target="_blank"
+                  >
+                    <CgWebsite /> &nbsp;
+                    {"Demo"}
+                  </Button>
+                  {"\n"}
+                  {"\n"}
+                  <Button
+                    variant="primary"
+                    href="https://play.google.com/store/apps/details?id=bblabs.dev.worka_app&hl=en"
+                    target="_blank"
+                  >
+                    <FaAndroid /> &nbsp;
+                    {"Android"}
+                  </Button>
+                </>
+              }
             />
           </Col>
 
@@ -50,7 +74,7 @@ function Projects() {
               isBlog={false}
               title="Laundry App"
               description="A convenient laundry service app for booking pickup and delivery of washing and dry cleaning. Get your laundry done without leaving home - like Grab, but for your clothes!"
-              ghLink="https://github.com/KAGAWADPARTZ/LaundryShop"              
+              ghLink="https://github.com/KAGAWADPARTZ/LaundryShop"
             />
           </Col>
 
@@ -79,8 +103,8 @@ function Projects() {
               imgPath={Proventous}
               isBlog={false}
               title="Proventous"
-              description="A dual-purpose platform combining intelligent job matching for job seekers with comprehensive workforce management tools for companies, covering the complete employee lifecycle."      
-              demoLink="https://proventous.com"      
+              description="A dual-purpose platform combining intelligent job matching for job seekers with comprehensive workforce management tools for companies, covering the complete employee lifecycle."
+              demoLink="https://proventous.com"
             />
           </Col>
 
@@ -89,9 +113,9 @@ function Projects() {
               imgPath={Thribo}
               isBlog={false}
               title="T.H.I.R.I.B.O"
-              description="A sensory processing screening tool that evaluates six key domains (touch, proprioception, vestibular, auditory, vision, taste/smell to help identify if individuals may need medical consultation."      
+              description="A sensory processing screening tool that evaluates six key domains (touch, proprioception, vestibular, auditory, vision, taste/smell to help identify if individuals may need medical consultation."
               // demoLink="https://proventous.com" 
-              customFooter="Internship Project"     
+              customFooter="Internship Project"
             />
           </Col>
 
@@ -100,13 +124,13 @@ function Projects() {
               imgPath={ProjectAG}
               isBlog={false}
               title="Project AG"
-              description="A CTF (Capture The Flag) website and project dedicated to restoring cybersecurity awareness in Iloilo City. Provides hands-on security challenges and educational resources to strengthen the local cybersecurity community."      
-              demoLink="https://project-ag.org" 
-              // customFooter="Internship Project"     
+              description="A CTF (Capture The Flag) website and project dedicated to restoring cybersecurity awareness in Iloilo City. Provides hands-on security challenges and educational resources to strengthen the local cybersecurity community."
+              demoLink="https://project-ag.org"
+            // customFooter="Internship Project"     
             />
           </Col>
         </Row>
-      </Container>    
+      </Container>
     </Container>
   );
 }
