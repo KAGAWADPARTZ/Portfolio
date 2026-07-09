@@ -4,14 +4,16 @@ import Particle from "../Particle";
 import Coop from "../../Assets/Projects/Coop.png";
 import Proventous from "../../Assets/Projects/Proventous.png";
 import LaundryApp from "../../Assets/Projects/LaundryApp.png";
-import MoneySaver from "../../Assets/Projects/MoneySaver.png"
+// import MoneySaver from "../../Assets/Projects/MoneySaver.png"
 import Worka from "../../Assets/Projects/Worka.png"
-import Xcess from "../../Assets/Projects/Xcess.jpg";
-import Thribo from "../../Assets/Projects/Thribo.jpg";
+import Xcess from "../../Assets/Projects/Xcess.png";
+import Thribo from "../../Assets/Projects/Thribo.png";
 import ProjectAG from "../../Assets/Projects/ProjectAG.png";
 import Button from "react-bootstrap/Button";
 import { CgWebsite } from "react-icons/cg";
-import { FaAndroid } from "react-icons/fa";
+import { FaAndroid, FaApple } from "react-icons/fa";
+
+
 
 function Projects() {
   return (
@@ -44,17 +46,15 @@ function Projects() {
               description="A HRMS web and mobile apps for managing employees, attendance, Geofence & IP-based, tasks with Kanban boards, team chat, and documents. Multi-tenant support with admin dashboard and employee portal."
               // ghLink="https://github.com/KAGAWADPARTZ/valentine"
               customFooter={
-                <>
+                <div className="project-btn-group">
                   <Button
                     variant="primary"
-                    href="https://worka.bblabs.dev/auth/login"
+                    href="https://workastaging.online/auth/login"
                     target="_blank"
                   >
                     <CgWebsite /> &nbsp;
                     {"Demo"}
                   </Button>
-                  {"\n"}
-                  {"\n"}
                   <Button
                     variant="primary"
                     href="https://play.google.com/store/apps/details?id=bblabs.dev.worka_app&hl=en"
@@ -63,8 +63,17 @@ function Projects() {
                     <FaAndroid /> &nbsp;
                     {"Android"}
                   </Button>
-                </>
+                  <Button
+                    variant="primary"
+                    href="https://testflight.apple.com/join/fKe8wcNZ"
+                    target="_blank"
+                  >
+                    <FaApple /> &nbsp;
+                    {"iOS"}
+                  </Button>
+                </div>
               }
+
             />
           </Col>
 
@@ -112,7 +121,7 @@ function Projects() {
             <ProjectCard
               imgPath={Thribo}
               isBlog={false}
-              title="T.H.I.R.I.B.O"
+              title="T.H.R.I.B.O"
               description="A sensory processing screening tool that evaluates six key domains (touch, proprioception, vestibular, auditory, vision, taste/smell to help identify if individuals may need medical consultation."
               // demoLink="https://proventous.com" 
               customFooter="Internship Project"

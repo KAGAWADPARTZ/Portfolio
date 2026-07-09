@@ -505,6 +505,19 @@ button:focus {
   margin-top: auto !important;
 }
 
+.project-card-view .card-body .project-btn-group {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  gap: 10px !important;
+  margin-top: auto !important;
+}
+
+.project-card-view .card-body .project-btn-group .btn {
+  margin: 0 !important;
+}
+
+
 /* Single button - centered (exactly like the layout) */
 .project-card-view .card-body .btn:only-of-type {
   display: block !important;
